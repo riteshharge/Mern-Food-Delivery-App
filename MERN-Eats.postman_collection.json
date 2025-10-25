@@ -1,0 +1,97 @@
+{
+  "info": {
+    "name": "MERN Eats API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{API}}/health",
+          "host": [
+            "{{API}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Test\",\"email\":\"test@example.com\",\"password\":\"test123\"}"
+        },
+        "url": {
+          "raw": "{{API}}/auth/signup",
+          "host": [
+            "{{API}}"
+          ],
+          "path": [
+            "auth",
+            "signup"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"test@example.com\",\"password\":\"test123\"}"
+        },
+        "url": {
+          "raw": "{{API}}/auth/login",
+          "host": [
+            "{{API}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Foods (List)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{API}}/foods",
+          "host": [
+            "{{API}}"
+          ],
+          "path": [
+            "foods"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API",
+      "value": "http://localhost:5000/api"
+    }
+  ]
+}
