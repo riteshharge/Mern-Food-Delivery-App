@@ -1,4 +1,4 @@
-# MERN Eats (Local MongoDB)
+# MERN Eats
 A full-stack food-delivery demo inspired by typical delivery UIs. Works offline with local MongoDB.
 
 ## Tech
